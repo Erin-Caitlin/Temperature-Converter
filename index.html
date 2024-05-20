@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Temperature Calculator</title>
   </head>
+
   <body>
-    <h1>Temperature Converter</h1>
     <form>
-      <div>
-        <input type="text" id="screen" />
-      </div>
+      <h1>Temperature Converter</h1>
       <div>
         <label for="user-input">Temperature</label>
-        <input type="text" placeholder="42" id="user-input"/>
+        <input type="text" placeholder="42" id="user-input" />
       </div>
       <div>
-        <label for="temperature-type">Select which temperature system you would like to convert to</label>
+        <label for="temperature-type">Temperature system you would like to convert to:</label>
         <select id="temperature-type">
           <option value="celsius">To Celsius</option>
           <option value="fahrenheit">To Fahrenheit</option>
@@ -25,6 +24,7 @@
       <div>
         <button type="button" id="convert-button">Convert</button>
       </div>
+      <input type="text" id="screen" />
       <p class="lead">E.C.W</p>
     </form>
     <script src="./script/code.js"></script>
