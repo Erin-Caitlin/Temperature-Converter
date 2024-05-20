@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Calculator</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Temperature Converter</h1>
-        <div class="col">
-            <label></label>
-            <input>
-        </div>
-        <div class="col">
-            <label></label>
-            <input>
-        </div>
-        <div class="col">
-            <label></label>
-            <input>
-        </div> 
-        <div>
-            <button></button>
-        </div>
-        <p class="lead">E.C.W</p>
-    </div>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <form>
+      <div>
+        <input type="text" id="screen" />
+      </div>
+      <div>
+        <label for="user-input">Temperature</label>
+        <input type="text" placeholder="42" id="user-input"/>
+      </div>
+      <div>
+        <label for="temperature-type">Select which temperature system you would like to convert to</label>
+        <select id="temperature-type">
+          <option value="celsius">To Celsius</option>
+          <option value="fahrenheit">To Fahrenheit</option>
+        </select>
+      </div>
+      <div>
+        <button type="button" id="convert-button">Convert</button>
+      </div>
+      <p class="lead">E.C.W</p>
+    </form>
     <script src="./script/code.js"></script>
-</body>
+  </body>
 </html>
