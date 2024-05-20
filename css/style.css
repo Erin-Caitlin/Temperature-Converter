@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: mediumslateblue;
+    color: midnightblue;
+}
+
+form {
+    background-color: mintcream;
+    border-radius: 1rem;
+}
+
+button {
+    background-color: mediumslateblue;
+    border-radius: 1rem;
+    border-color: blue;
+}
+
+#user-input {
+    background-color: snow;
+    border-color: mediumslateblue;
+    border-radius: 1rem;
+}
+select {
+    background-color: snow;
+    border-color: mediumslateblue;
+    border-radius: 1rem;
+}
+#screen {
+    background-color: seashell;
+    border-color: powderblue;
+    border-radius: 1rem;
+}
