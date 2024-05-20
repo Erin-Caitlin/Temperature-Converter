@@ -8,11 +8,11 @@ let result = null
 
 convertBtn.addEventListener('click', () => {
     if(selectedOption === 'To Celsius'){
-        result = +userInput * 9/5 + 32  //the user's input will presumably be in fahrenheits
+        result = +userInput.value * 9/5 + 32  //the user's input will presumably be in fahrenheits
         screen.value = result
     }
     else{
-        result = (+userInput - 32) * 5/9
+        result = (+userInput.value - 32) * 5/9
         screen.value = result
     }
 })
