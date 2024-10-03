@@ -2,41 +2,73 @@
 ::before,
 ::after {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     text-align: center;
-    background-color: mediumslateblue;
-    color: midnightblue;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form {
-    background-color: mintcream;
-    border-radius: 1rem;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
 }
 
 button {
-    background-color: mediumslateblue;
-    border-radius: 1rem;
-    border-color: blue;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
-#user-input {
-    background-color: snow;
-    border-color: mediumslateblue;
-    border-radius: 1rem;
+button:hover {
+    background-color: #444;
 }
+
+#user-input,
 select {
-    background-color: snow;
-    border-color: mediumslateblue;
-    border-radius: 1rem;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+    margin-bottom: 20px; 
 }
+
+#user-input:focus,
+select:focus {
+    border-color: #888;
+    outline: none;
+}
+
 #screen {
-    background-color: seashell;
-    border-color: powderblue;
-    border-radius: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 16px;
+    color: #666;
+    background-color: rgba(245, 230, 200, 0.6);
+    margin-top: 20px; 
 }
